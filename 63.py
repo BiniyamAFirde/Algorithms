@@ -1,3 +1,4 @@
+
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         if not obstacleGrid or not obstacleGrid[0]:
