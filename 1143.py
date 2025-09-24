@@ -1,3 +1,4 @@
+
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         if len(text1) < len(text2):
