@@ -1,5 +1,4 @@
 from collections import deque
-
 class Solution:
     def shortestPathBinaryMatrix(self, grid: List[List[int]]) -> int:
         n = len(grid)
