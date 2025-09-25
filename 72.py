@@ -19,7 +19,7 @@ class Solution:
                 else:
                     curr[j] = min(prev[j - 1], 
                                  prev[j],      
-                                 curr[j - 1])  # insert
+                                 curr[j - 1]) 
                     curr[j] += 1
             
    
