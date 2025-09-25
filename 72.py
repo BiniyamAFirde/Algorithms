@@ -17,8 +17,8 @@ class Solution:
                 if word1[i - 1] == word2[j - 1]:
                     curr[j] = prev[j - 1]
                 else:
-                    curr[j] = min(prev[j - 1],  # replace
-                                 prev[j],      # delete
+                    curr[j] = min(prev[j - 1], 
+                                 prev[j],      
                                  curr[j - 1])  # insert
                     curr[j] += 1
             
