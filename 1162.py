@@ -1,6 +1,5 @@
 class Solution:
     def maxDistance(self, grid: List[List[int]]) -> int:
-        
         n = len(grid)
         directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         dist = [[-1] * n for _ in range(n)]
