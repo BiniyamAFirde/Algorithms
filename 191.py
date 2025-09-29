@@ -1,3 +1,4 @@
+# Number of one bits
 class Solution:
     def hammingWeight(self, n: int) -> int:
         count=0
