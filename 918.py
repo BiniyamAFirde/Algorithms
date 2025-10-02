@@ -5,8 +5,7 @@ class Solution:
         total_sum = nums[0]
         for i in range(1, len(nums)):
             current_max = max(nums[i], current_max + nums[i])
-            max_so_far = max(max_so_far, current_max)
-            
+            max_so_far = max(max_so_far, current_max) 
             current_min = min(nums[i], current_min + nums[i])
             min_so_far = min(min_so_far, current_min)
             
