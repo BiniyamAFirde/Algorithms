@@ -11,5 +11,4 @@ class Solution:
             total_sum += nums[i]
         if max_so_far < 0:
             return max_so_far
-
         return max(max_so_far, total_sum - min_so_far)
