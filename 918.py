@@ -8,9 +8,7 @@ class Solution:
             max_so_far = max(max_so_far, current_max) 
             current_min = min(nums[i], current_min + nums[i])
             min_so_far = min(min_so_far, current_min)
-            
             total_sum += nums[i]
-
         if max_so_far < 0:
             return max_so_far
 
