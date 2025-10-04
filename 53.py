@@ -6,7 +6,6 @@ class Solution:
         current_sum = 0
         
         for num in nums:
-    
             if current_sum < 0:
                 current_sum = 0
             
