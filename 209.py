@@ -3,6 +3,7 @@ class Solution:
         left = 0
         current_sum = 0
         min_length = len(nums) + 1  # Initialize with impossible value
+        
         for right in range(len(nums)):
             current_sum += nums[right]
             while current_sum >= target:
