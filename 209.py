@@ -10,6 +10,5 @@ class Solution:
                 min_length = min(min_length, right - left + 1)
                 current_sum -= nums[left]
                 left += 1
-        
         return min_length if min_length <= len(nums) else 0
          
