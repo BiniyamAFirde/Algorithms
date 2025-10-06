@@ -5,7 +5,6 @@ class Solution:
         min_length = len(nums) + 1  # Initialize with impossible value
         for right in range(len(nums)):
             current_sum += nums[right]
-            
             while current_sum >= target:
                 min_length = min(min_length, right - left + 1)
                 current_sum -= nums[left]
