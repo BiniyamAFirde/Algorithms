@@ -7,7 +7,6 @@ class Solution:
         for right in range(len(s)):
             idx = ord(s[right]) - ord('A')
             char_count[idx] += 1
-
             max_freq = max(max_freq, char_count[idx])
             if (right - left + 1) - max_freq > k:
                 left_idx = ord(s[left]) - ord('A')
