@@ -9,10 +9,8 @@ class Solution:
             char_count[idx] += 1
 
             max_freq = max(max_freq, char_count[idx])
-
             if (right - left + 1) - max_freq > k:
                 left_idx = ord(s[left]) - ord('A')
                 char_count[left_idx] -= 1
                 left += 1
-            
             max_length = max(max_length, right - left + 1)
