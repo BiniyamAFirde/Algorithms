@@ -5,7 +5,6 @@ class Solution:
         max_length = 0
         max_freq = 0
         for right in range(len(s)):
- 
             idx = ord(s[right]) - ord('A')
             char_count[idx] += 1
 
