@@ -7,6 +7,7 @@ class Solution:
         for ch in s:
             if ch.isalnum()==True:
                 new+=ch.lower()
+                
         b=""
         for i in range(len(new)-1,-1,-1):
                 b+=new[i]
