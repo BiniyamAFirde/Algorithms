@@ -1,11 +1,11 @@
-#unique element appears at most twice
+#unique element appears at most twice (duplicated values number 2)
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         if len(nums)<=2:
             return len(nums)
         l=2
         for i in range(2,len(nums)):
-            if nums[i]!=nums[l-2]: #Key
+            if nums[i]!=nums[l-2]: #Key insight
                 nums[l]=nums[i]
                 l+=1
         return l
