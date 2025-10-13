@@ -1,3 +1,4 @@
+#unique element appears at most twice
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         if len(nums)<=2:
