@@ -1,4 +1,5 @@
-#724. Find Pivot Index
+#724
+# Find Pivot Index
 class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
         left_sum=0
