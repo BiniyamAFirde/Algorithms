@@ -1,0 +1,31 @@
+class Solution:
+    def subarraySum(self, nums: List[int], k: int) -> int:
+        
+        '''
+        count = 0
+        n = len(nums)
+        
+        for i in range(n):
+            current_sum = 0
+            for j in range(i, n):
+                current_sum += nums[j]
+                if current_sum == k:
+                    count += 1
+        
+        return count
+        '''
+        
+        count = 0
+        prefix_sum = 0
+        prefix_map = {0: 1} 
+        
+        for num in nums:
+            prefix_sum += num
+            
+            needed = prefix_sum - k
+            if needed in prefix_map:
+                count += prefix_map[needed]
+            
+            prefix_map[prefix_sum] = prefix_map.get(prefix_sum, 0) + 1
+        
+        return count
