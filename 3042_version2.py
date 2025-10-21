@@ -2,11 +2,9 @@ class Solution:
     def countPrefixSuffixPairs(self, words: List[str]) -> int:
         count = 0
         n = len(words)
-        
         for i in range(n):
             str1 = words[i]
             len1 = len(str1)
-            
             for j in range(i + 1, n):
                 str2 = words[j]
                 len2 = len(str2)
@@ -27,5 +25,4 @@ class Solution:
                 
                 if is_prefix and is_suffix:
                     count += 1
-        
         return count
