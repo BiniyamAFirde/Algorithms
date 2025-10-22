@@ -13,7 +13,6 @@ class WordDictionary:
                 node.children[char] = TrieNode()
             node = node.children[char]
         node.is_end = True
-
     def search(self, word: str) -> bool:
         def dfs(node, index):
             if index == len(word):
