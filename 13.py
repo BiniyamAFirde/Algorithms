@@ -19,6 +19,5 @@ class Solution:
             if i < n - 1 and roman_map[s[i]] < roman_map[s[i + 1]]:
                 total -= roman_map[s[i]]
             else:
-                total += roman_map[s[i]]
-        
+                total += roman_map[s[i]]       
         return total
