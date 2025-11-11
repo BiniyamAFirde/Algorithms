@@ -2,7 +2,6 @@ from collections import deque
 class Solution:
     def shortestPathBinaryMatrix(self, grid: List[List[int]]) -> int:
         n = len(grid)
-        
       
         if grid[0][0] == 1 or grid[n-1][n-1] == 1:
             return -1
