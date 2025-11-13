@@ -8,7 +8,6 @@ class Solution:
         carry = 0
         result = []
         
-
         for i in range(max_len - 1, -1, -1):
    
             total = int(a[i]) + int(b[i]) + carry
